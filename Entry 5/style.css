@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+*{margin:0; padding:0;}
+
+body{
+	font-family: 'DM Serif Display', serif;
+	background-image: url(''); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed; /* Optional: Keep the background fixed while scrolling */
+}
+
+section{
+	background-color:darkgray;
+	padding:20px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap-reverse;
+	justify-content: space-evenly;
+	gap:1px;
+  border: 4px black solid;
+}
+
+p.title{
+  min-height:650px;
+  font-size: 150px;
+  padding:30px;
+}
+
+
+
+div.title{
+  font-size: 30px;
+}
+
+
+
+
+p{
+	min-height:100px;
+	background-color:lightgray;
+	padding:5px;
+	border: 4px black solid;
+  font-size:15px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fullscreen {
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background-color: white;
+}

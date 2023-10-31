@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet": href="style.css">
+
+<style>
+        body {
+            margin: 0;
+  
+        }
+
+        .rain {
+            position: absolute;
+            width: 2.5px;
+            height: 25px;
+            background-color: #808080; /* Blue raindrop color */
+            opacity: 0.7;
+            animation: rainFall 1s linear infinite, rainDrop 0.5s linear infinite;
+        }
+
+        /* Raindrop falling animation */
+        @keyframes rainFall {
+            0% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1.7;
+            }
+        }
+
+        /* Raindrop dropping animation */
+        @keyframes rainDrop {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+<center>
+<p class="title">
+    RECOMMENDATION</p>
+</center>
+
+</head>
+
+<body>
+
+<center>
+<div class="container">
+<div class="wrapper">
+    <div class="image">
+        <img src="img/jjp.jpg">
+        <div class="content">
+            <h1>As much as I loved you</h1>
+            <p>Jaejung Parc</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="image">
+        <img src="img/jsy.jpg">
+        <div class="content">
+            <h1>Like It</h1>
+            <p>Jongshin Yoon</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+<div class="wrapper">
+    <div class="image">
+        <img src="img/onestar.jpg">
+        <div class="content">
+            <h1>Get Ready To Leave</h1>
+            <p>Onestar</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="image">
+        <img src="img/jjp2.jpg">
+        <div class="content">
+            <h1>A Letter to B</h1>
+            <p>Jaejung Parc</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="wrapper">
+    <div class="image">
+        <img src="img/onestar2.jpg">
+        <div class="content">
+            <h1>A Tearful Farewell</h1>
+            <p>Onestar</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="image">
+        <img src="img/gb9.jpg">
+        <div class="content">
+            <h1>Star</h1>
+            <p>Gb9</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+<div class="wrapper">
+    <div class="image">
+        <img src="img/jjp3.jpg">
+        <div class="content">
+            <h1>Dear. My lover's love</h1>
+            <p>Jaejung Parc</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="image">
+        <img src="img/gummy.jpg">
+        <div class="content">
+            <h1>You Are My Everything</h1>
+            <p>Gummy</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+<div class="wrapper">
+    <div class="image">
+        <img src="img/won park.jpg">
+        <div class="content">
+            <h1>Try</h1>
+            <p>Won Park</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="image">
+        <img src="img/onestar3.jpg">
+        <div class="content">
+            <h1>Hello</h1>
+            <p>Onestar</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</center>
+
+
+
+</body>
+
+<div class="cloud"></div>
+    <!-- Generate multiple raindrops using JavaScript -->
+    <script>
+        const numRaindrops = 100;
+        const container = document.body;
+
+        for (let i = 0; i < numRaindrops; i++) {
+            const raindrop = document.createElement('div');
+            raindrop.className = 'rain';
+            raindrop.style.left = `${Math.random() * 100}%`;
+            raindrop.style.top = `${Math.random() * 100}%`;
+            raindrop.style.animationDelay = `${Math.random()}s`;
+            container.appendChild(raindrop);
+        }
+
+    </script>
+  
+  </html>

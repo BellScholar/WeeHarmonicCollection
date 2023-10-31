@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+        body {
+            margin: 0;
+  
+        }
+
+        .rain {
+            position: absolute;
+            width: 2.5px;
+            height: 25px;
+            background-color: #808080; /* Blue raindrop color */
+            opacity: 0.7;
+            animation: rainFall 1s linear infinite, rainDrop 0.5s linear infinite;
+        }
+
+        /* Raindrop falling animation */
+        @keyframes rainFall {
+            0% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1.7;
+            }
+        }
+
+        /* Raindrop dropping animation */
+        @keyframes rainDrop {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+<center>
+<p class="title">
+THE REASON WHY I LISTEN TO EMOTIONAL SONGS
+</p>
+</center>
+
+</head>
+
+<body>
+      <center><img src="img/sadrain.jpg"alt="" style="width:600px;px;">
+    <link rel="stylesheet": href="style.css">
+    <h2 id=rgbc>Because I am originally from South Korea, I do listen to a lot of Korean songs, especially Korean ballad songs. <br>I was influenced by my parents who used to listen to these songs. <br><br>My friends told me <em>why listen to sad songs when you can listen to happy and fun songs that can cheer you up?</em> <br>I don't just listen to Korean ballad songs because I want to listen to sad songs. I listen to these because I was amazed on how a type of music can touch one's heart. I also feel comforted when I am listening to these songs.</h2>
+    <p id="hex"><u></u></p>
+
+</body>
+</center>
+
+<div class="cloud"></div>
+    <!-- Generate multiple raindrops using JavaScript -->
+    <script>
+        const numRaindrops = 100;
+        const container = document.body;
+
+        for (let i = 0; i < numRaindrops; i++) {
+            const raindrop = document.createElement('div');
+            raindrop.className = 'rain';
+            raindrop.style.left = `${Math.random() * 100}%`;
+            raindrop.style.top = `${Math.random() * 100}%`;
+            raindrop.style.animationDelay = `${Math.random()}s`;
+            container.appendChild(raindrop);
+        }
+
+    </script>
+  </body>
+  </html>
