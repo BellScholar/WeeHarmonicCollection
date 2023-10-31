@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+        body {
+            margin: 0;
+  
+        }
+
+        .rain {
+            position: absolute;
+            width: 2.5px;
+            height: 25px;
+            background-color: #808080; /* Blue raindrop color */
+            opacity: 0.7;
+            animation: rainFall 1s linear infinite, rainDrop 0.5s linear infinite;
+        }
+
+        /* Raindrop falling animation */
+        @keyframes rainFall {
+            0% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1.7;
+            }
+        }
+
+        /* Raindrop dropping animation */
+        @keyframes rainDrop {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+<center>
+<p class="title">
+THIS WEEK'S <br>TOP SONGS</p>
+</center>
+
+</head>
+
+<body>
+    <link rel="stylesheet": href="style.css">
+    <center><img src="img/jjp.jpg"alt="" style="width:400px;px;">
+      <br>
+      <br>
+    <center>
+ <section>
+      <div>
+        <p>As much as I loved you - Jaejung Parc</p>
+      </div>
+      <div>
+        <p>A Tearful Farewell - Onestar</p>
+      </div>
+      <div>
+        <p>Breathe - Donggeun Han</p>
+      </div>
+      <div>
+        <p>Hello - Onestar</p>
+      </div>
+      <div>
+        <p>Dear. My lover's love - Jaejung Parc</p>
+      </div>
+      <div>
+        <p>That I was Once By Your Side - Yeonwoo Kim, Jongmin Moon</p>
+      </div>
+      <div>
+        <p>Finally - Dongryul Kim</p>
+      </div>
+      <div>
+        <p>Love... That Guy - Muzie</p>
+      </div>
+      <div>
+        <p>I got lucky - Jinah Kwon</p>
+      </div>
+      <div>
+        <p>Get Ready To Leave - Onestar</p>
+      </div>
+      
+</section>
+
+</body>
+</center>
+
+<div class="cloud"></div>
+    <!-- Generate multiple raindrops using JavaScript -->
+    <script>
+        const numRaindrops = 100;
+        const container = document.body;
+
+        for (let i = 0; i < numRaindrops; i++) {
+            const raindrop = document.createElement('div');
+            raindrop.className = 'rain';
+            raindrop.style.left = `${Math.random() * 100}%`;
+            raindrop.style.top = `${Math.random() * 100}%`;
+            raindrop.style.animationDelay = `${Math.random()}s`;
+            container.appendChild(raindrop);
+        }
+
+    </script>
+  
+  </html>
