@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet": href="style.css">
+  <link href="img/favicon.png" rel="icon" >
+
+<style>
+        body {
+            margin: 0;
+  
+        }
+
+        .rain {
+            position: absolute;
+            width: 2.5px;
+            height: 25px;
+            background-color: #808080; /* Blue raindrop color */
+            opacity: 0.7;
+            animation: rainFall 1s linear infinite, rainDrop 0.5s linear infinite;
+        }
+
+        /* Raindrop falling animation */
+        @keyframes rainFall {
+            0% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1.7;
+            }
+        }
+
+        /* Raindrop dropping animation */
+        @keyframes rainDrop {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+<center>
+<p class="title">
+RECOMMENDED SONG OF THE DAY
+</p>
+</center>
+
+</head>
+<body>
+
+    <a id="home-link" class="meta-link" href="https://bellscholar.github.io/WeeHarmonicCollection/" >
+        <i class="fa-brands fa-link"></i>
+        <span>Home</span>
+      </a>
+
+<center>
+    <header>
+        <nav>
+                Shortcut:<br><br>
+                <a href="#home">Today's Recommended Song Lyrics</a><br>
+                <a href="#featured">Name of the Song</a><br>
+                
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br>
+            
+        </nav>
+       
+    </header>
+
+    <main>
+        <section id="home">
+
+            <h2>Today's Recommended Song Lyrics</h2>
+            <img src="img/muzie.jpg" alt="muzie" class="responsive">
+            <p>Covered By Muzie</p>
+            <br>
+            <br>
+            <p>We always love alone, breakup alone<span class="step0">
+We always remember alone, run away alone</span>
+In front of this thing called love<span class="step1">
+I’m always empty handed</span>
+We always pass by alone, regret alone<span class="step3">
+Always act steady when we are shaken</span>
+In front of this thing called love<span class="step4">
+I am always made a fool<br><br><br></span>
+
+I love you, I love you<span class="step5">
+The melody that never responds when I call</span>
+Even if my heart is bruised<span class="step6">
+Even if the door to the heart is far away</span>
+Once again my feet walk towards that place<span class="step0">
+
+I love you, I love you</span>
+It always comes<span class="step1">
+and goes as it pleases</span>
+It leaves as quietly as it comes<br><span class="step2"><br><br><br>
+
+We live and cry because of memories</span>
+Even if I lie and say I’ve forgotten you<span class="step3">
+I swallow my feelings as I take in the air</span>
+And I smile as I wave my hands goodbye<span class="step4"><br><br><br>
+
+I love you, I love you</span>
+The words that you will never hear<span class="step5">
+Even if I call you till I thirst</span>
+Here I stand, my head shaking in front of love<span class="step6">
+I love you, I love you</span>
+It always comes<span class="step0">
+and goes as it pleases</span>
+It leaves as quietly as it comes<span class="step1"><br><br><br>
+
+Even if I ignore it</span>
+Even if I forget it<span class="step2">
+Love always comes again</span><br><br><br>
+
+Yeah, I still believe my heart<span class="step3">
+Love…</span>
+Love always comes again<span class="step4"></span><br><br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br></p>
+        </section>
+
+        <section id="featured">
+            <h2>Name of the Song</h2>
+            <div class="song">
+                <img src="img/bobbykim.jpg" alt="Featured Song Cover">
+                <div class="song-details">
+                    <h3>Love... that guy</h3>
+                    <p>Bobby Kim</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</center>
+</body>
+
+<div class="cloud"></div>
+    <!-- Generate multiple raindrops using JavaScript -->
+    <script>
+        const numRaindrops = 100;
+        const container = document.body;
+
+        for (let i = 0; i < numRaindrops; i++) {
+            const raindrop = document.createElement('div');
+            raindrop.className = 'rain';
+            raindrop.style.left = `${Math.random() * 100}%`;
+            raindrop.style.top = `${Math.random() * 100}%`;
+            raindrop.style.animationDelay = `${Math.random()}s`;
+            container.appendChild(raindrop);
+        }
+
+    </script>
+
+</html>
