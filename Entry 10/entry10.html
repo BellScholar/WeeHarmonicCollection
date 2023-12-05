@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicontest.png" rel="icon" >
+    <title>Entry 10</title>
+
+    <style>
+        body {
+            margin: 0;
+  
+        }
+
+        .rain {
+            position: absolute;
+            width: 2.5px;
+            height: 25px;
+            background-color: #b4d1f4; 
+            opacity: 0.7;
+            animation: rainFall 1s linear infinite, rainDrop 0.5s linear infinite;
+        }
+
+        /* Raindrop falling animation */
+        @keyframes rainFall {
+            0% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1.7;
+            }
+        }
+
+        /* Raindrop dropping animation */
+        @keyframes rainDrop {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+    <center>
+    <p class="title">
+    MOST PLAYED SONGS OF THE YEAR
+    </p>
+    </center>
+
+</head>
+
+<body>
+
+    <a id="home-link" class="meta-link" href="https://bellscholar.github.io/WeeHarmonicCollection/" >
+        <i class="fa-brands fa-link"></i>
+        <span>Home</span>
+      </a>
+
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <center>
+        <img src="img/check.gif" width="100">
+        <h1>Updating...</h1>
+        <p>Last updated on November 20, 9:21 PM</p></center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+<div class="container">
+        <header>
+            <h1>Replay of the Year</h1>
+            <p>Track your top played songs here!</p>
+        </header>
+        <br><br>
+        <center>
+        <div class="main-content">
+            <section class="column">
+                <img src="img/muzie.jpg" width="150">
+                <h2>Love... That Guy</h2>
+                <p class="cont">
+                Song by Bobby Kim<br>
+                Covered by Muzie<br>
+                2009.01.13<br>
+                </p>
+            </section>
+
+            <section class="column">
+                <img src="img/yeonwoo.jpg" width="150">
+                <h2>Can't Have You</h2>
+                <p class="cont">
+                Song by Bank<br>
+                Covered by Yeonwoo Kim<br>
+                1995<br>
+                </p>
+            </section>
+
+            <section class="column">
+                <img src="img/onestar.jpg" width="150">
+                <h2>I can't take my eyes off you</h2>
+                <p class="cont">
+                Song by Onestar<br>
+                2019<br>
+                </p>
+            </section>
+
+        </div>
+
+        <div class="main-content">
+            <section class="column">
+                <img src="img/onestar2.jpg" width="150">
+                <h2>Hee Jae</h2>
+                <p class="cont">
+                Song by Sikyung Sung<br>
+                Remake by Onestar<br>
+                2018.10.24<br>
+                </p>
+            </section>
+
+            <section class="column">
+                <img src="img/yongjae.jpg" width="150">
+                <h2>First Line</h2>
+                <p class="cont">
+                Song by Yongjae Shin<br>
+                2020<br>
+                </p>
+            </section>
+
+            <section class="column">
+                <img src="img/kyuhyun.jpg" width="150">
+                <h2>Eternal Sunshine</h2>
+                <p class="cont">
+                Song by Kyuhyun<br>
+                2014<br>
+                </p>
+            </section>
+
+        </div>
+
+        <div class="main-content">
+            <section class="column">
+                <img src="img/jang.jpg" width="150">
+                <h2>See you later</h2>
+                <p class="cont">
+                Song by Jang Deok Chul<br>
+                2019<br>
+                </p>
+            </section>
+
+            <section class="column">
+                <img src="img/parc.jpg" width="150">
+                <h2>A Letter To B</h2>
+                <p class="cont">
+                Song by Jaejung Parc<br>
+                2023<br>
+                </p>
+            </section>
+
+            <section class="column">
+                <img src="img/dong.jpg" width="150">
+                <h2>Finally</h2>
+                <p class="cont">
+                Song by Dongryul Kim<br>
+                2004.03.10<br>
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        const numRaindrops = 100;
+        const container = document.body;
+
+        for (let i = 0; i < numRaindrops; i++) {
+            const raindrop = document.createElement('div');
+            raindrop.className = 'rain';
+            raindrop.style.left = `${Math.random() * 100}%`;
+            raindrop.style.top = `${Math.random() * 100}%`;
+            raindrop.style.animationDelay = `${Math.random()}s`;
+            container.appendChild(raindrop);
+        }
+
+    </script>
+
+</body>
+</html>
+
