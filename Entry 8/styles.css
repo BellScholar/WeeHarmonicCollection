@@ -1,0 +1,225 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  background:#485b6e;
+  background-image: url('img/background.jpg');
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  padding: 200px;
+}
+
+.container {
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10%;
+  text-align:left;
+}
+
+h1 {
+  font-family: "Open Sans", sans;
+  font-weight:300;
+  text-align:center;
+  color:rgba(255,255,255,0.6)
+}
+
+h2 {
+  color:#2c3e52;
+  font-family:  "Open Sans", sans;
+  font-size: 14px;
+  text-align:center;
+  font-weight:700;
+  margin-bottom:50px;
+  
+}
+
+.service-details {
+	/*width: 460px;*/
+	height: 250px;	
+	/*height: 230px;*/
+	overflow: hidden;
+	position: relative;
+}
+
+.service-details img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: inherit;
+	width: auto;
+	height: 100%;
+	float: left;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s;
+
+}
+
+.service-details:hover img {
+	/*opacity: 0.4 !important;*/
+}
+
+.service-details .service-hover-text h3 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 25px;
+  font-weight:300;
+	font-family: "Open Sans";
+}
+
+.service-details .service-hover-text h4 {
+	padding: 0px;
+	padding-bottom: 13px;
+	margin: 0px;
+	font-size: 14px;
+  letter-spacing: 3px;
+	width: 90%;
+	font-family: "Open Sans";
+  text-transform:uppercase;
+	border-bottom: 2px solid #000;
+}
+
+.service-details .service-hover-text p {
+	padding-top: 13px;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: "Open Sans";
+}
+
+
+.service-details .service-hover-text{
+	width: 42%;
+	height: 89%;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	padding: 3% 4%;
+	background: #D90E0E;
+	color: rgba(255,255,255,1);
+/*	display: none;*/
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.4s;
+}
+
+.service-details:hover .service-hover-text {
+	display: block !important;
+	color: rgba(255,255,255,1);
+	background:rgba(217,14,14,0.85);
+	left: 0px;
+	top: 0px;
+}
+
+
+.service-details .service-text {
+	width: 50%;
+	height: inherit;
+	background: #000;
+	float: left;
+	position: absolute;
+	left: 50%;
+}
+
+.service-details .service-text p {
+	padding:100px 0px 0px 20px;
+	font-size: 24px;
+	font-family: "Open Sans";
+  font-weight:700;
+	color: #fff;
+}
+
+.service-details .service-text p span {
+	font-family: "Open Sans" !important;
+}
+
+.service-details .service-text a , .service-white .service-text {
+	padding: 0px 0px 0px 20px;
+	font-size: 14px !important;
+	color:#FF5A22 !important;
+	font-family: "Open Sans" !important;
+	text-decoration: none !important; 
+}
+
+.service-details .service-text {
+	float: left;
+} 
+
+.service-white {
+	background: #eee !important;
+	width: 50% !important;
+	height: inherit !important;
+}
+
+.service-white p {
+	color: #000 !important;
+}
+
+#image-track {
+	display: flex;
+	gap: 4vmin;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(0%, -50%); 
+	user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+	width: 40vmin;
+	height: 56vmin;
+	object-fit: cover;
+	object-position: 100% center;
+  }
+  
+  
+  body.menu-toggled > .meta-link > span {
+	color: rgb(30, 30, 30);
+  }
+  
+  #next-link {
+	middle: 60px;
+	top: 60px;
+  }
+  
+  #next-link > i {
+	color: rgb(94, 106, 210);
+  }
+  
+  #home-link > i {
+	color: rgb(239, 83, 80);
+  }
+  
+  .meta-link {
+	align-items: center;
+	backdrop-filter: blur(3px);
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+	top: 680px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	cursor: pointer;  
+	display: inline-flex;
+	gap: 5px;
+	left: 10px;
+	padding: 10px 20px;
+	position: fixed;
+	text-decoration: none;
+	transition: background-color 400ms, border-color 400ms;
+	z-index: 10000;
+  }
+  
+  .meta-link:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .meta-link > i, .meta-link > span {
+	height: 20px;
+	line-height: 20px;
+  }
+  
+  .meta-link > span {
+	color: rgb(255, 255, 255);
+	font-family: "Abril Fatface", sans-serif;
+	font-weight: 500;
+  }

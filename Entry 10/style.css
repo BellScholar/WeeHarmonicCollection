@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Edu+TAS+Beginner&family=Indie+Flower&family=Pacifico&family=Satisfy&family=Sriracha&display=swap');
+
+*{margin:0; padding:0;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', sans-serif;
+    cursor: pointer;
+    background-color:black;
+    background-image: 'img/depressing.jpg'; /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed; /* Optional: Keep the background fixed while scrolling */
+}
+
+p.title{
+  min-height:650px;
+  font-size: 140px;
+  padding:120px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+h1, p {
+    font-size: 2em;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: #2ecc71; 
+}
+
+p:hover {
+    transform: scale(1.1);
+    color: #e6aba0; 
+}
+
+
+header {
+    background-color: #66a0e9;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color:black;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+#image-track {
+	display: flex;
+	gap: 4vmin;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(0%, -50%); 
+	user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+	width: 40vmin;
+	height: 56vmin;
+	object-fit: cover;
+	object-position: 100% center;
+  }
+  
+  
+  body.menu-toggled > .meta-link > span {
+	color: rgb(30, 30, 30);
+  }
+  
+  #next-link {
+	middle: 60px;
+	top: 60px;
+  }
+  
+  #next-link > i {
+	color: rgb(94, 106, 210);
+  }
+  
+  #home-link > i {
+	color: rgb(239, 83, 80);
+  }
+  
+  .meta-link {
+	align-items: center;
+	backdrop-filter: blur(3px);
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+	top: 680px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	cursor: pointer;  
+	display: inline-flex;
+	gap: 5px;
+	left: 10px;
+	padding: 10px 20px;
+	position: fixed;
+	text-decoration: none;
+	transition: background-color 400ms, border-color 400ms;
+	z-index: 10000;
+  }
+  
+  .meta-link:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .meta-link > i, .meta-link > span {
+	height: 20px;
+	line-height: 20px;
+  }
+  
+  .meta-link > span {
+	color: rgb(255, 255, 255);
+	font-family: "Abril Fatface", sans-serif;
+	font-weight: 500;
+  }
